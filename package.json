@@ -1,10 +1,24 @@
 {
-  "name": "@org-utils/errors",
+  "name": "client-api-errors",
   "version": "0.0.0",
   "description": "Framework-agnostic application and HTTP error primitives for Node.js and TypeScript applications.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "author": "Anwar <anwarkamal1434@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/org-utils/client-api-errors.git"
+  },
+  "homepage": "https://github.com/org-utils/client-api-errors#readme",
+  "bugs": {
+    "url": "https://github.com/org-utils/client-api-errors/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
