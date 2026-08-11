@@ -24,9 +24,9 @@ export class AppError extends Error {
   readonly isOperational: boolean;
   readonly details?: ErrorDetail[];
 
-  constructor(message: string, statusCode: number, code: string, options: AppErrorOptions = {}) {
+  constructor(message: string, statusCode: number, code: string, options: AppErrorOptions = {}, name?: string) {
     super(message, options.cause !== undefined ? { cause: options.cause } : undefined);
-    this.name = new.target.name;
+    this.name = name  || new.target.name || "AppError";
     this.statusCode = statusCode;
     this.code = code;
     this.isOperational = options.isOperational ?? true;
