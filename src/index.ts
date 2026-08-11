@@ -18,8 +18,16 @@ import  {
   BadGatewayError,
   ServiceUnavailableError,
   GatewayTimeoutError,
+  CustomError,
+  UnsupportedMediaTypeError,
+  ValidationError
 } from "./http-errors.js";
 import { HttpStatus } from "./http-status.js";
+import { ErrorCode } from "./error-codes.js";
+export * from './error-guards.js';
+export * from './error-normalize.js';
+export * from './http-errors.js';
+export * from './createAppError.js';
 
 import type {
   AppErrorOptions,
@@ -155,5 +163,10 @@ export  {
   BadGatewayError,
   ServiceUnavailableError,
   GatewayTimeoutError,
-  AppError
+  AppError,
+  ValidationError,
+  UnsupportedMediaTypeError,
+  CustomError,
+  HttpStatus,
+  ErrorCode
 } ;

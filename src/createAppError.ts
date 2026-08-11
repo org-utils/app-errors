@@ -84,6 +84,7 @@ export function createAppError<
       new GatewayTimeoutError(message, options),
     customError: (message?: string, options?: AppErrorOptions) =>
       new CustomError(message, options),
+
     HTTP_STATUS: { ...HttpStatus, ...httpStatuses },
     ERROR_CODES: { ...ErrorCode, ...errorCodes },
   };
